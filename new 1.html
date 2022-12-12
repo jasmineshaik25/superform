@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Javascript</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+ #registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+#registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+	
+
+
+	
+
+</style>
+</head>
+<body>
+<div class="container">
+<form>
+    
+	
+    <h1>Yoga class submission form</h1>
+	<h2>Fee:500rs</h2>
+	<img src="pic1.jpg">
+    <p>Please fill in this form to register for yoga  class.</p>
+    <hr>
+    <label for="email"><b>First name</b></label>
+    <input type="text" placeholder="First name" name="email" id="fname" required>
+    
+    <label for="email"><b>Last name</b></label>
+    <input type="text" placeholder="Last name" name="lname" id="lname" required>
+	<label for="email"><b>Telephone</b></label>
+    <input type="text" placeholder="no" name="phone" id="phone" required>
+        <label for="email"><b>Age</b></label>
+    <input type="text" placeholder="Age" name="age" id="age" required>
+	
+	
+   <label for="email"><b>Batch</b></label>
+   <select input type="text" placeholder="Select the batch"  name="batch" id="batch" required>
+	
+	<option value="" selected disabled>--- select Batch --</option>
+	<option value="1">Batch1 6-7AM</option>
+	<option value="2">Batch1 7-8AM</option>
+	<option value="3">Batch1 8-9AM</option>
+	<option value="4">Batch1 5-6PM</option>
+	</select>
+
+     
+	
+<hr>
+<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+<button  type="submit" id="registerbtn">Register</button>
+  
+  
+  
+</form> 
+</div>
+<script type="text/javascript">
+	
+	document.getElementById("registerbtn").onclick=function (){
+	 var x=document.getElementById("age").value;
+	 
+	 
+	 
+	 if(x < 18 || x > 65)
+	 {
+	 alert("age is not correct");
+	 }
+}
+	
+
+
+</script>
+	
+
+
+	
+
+
+	 
+  
+
+</body>
+</html>
